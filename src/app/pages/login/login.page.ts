@@ -7,10 +7,10 @@ import { HeaderAppComponent } from '../../components/header-app/header-app.compo
   styleUrls: ['./login.page.scss']
 })
 export class LoginPage implements OnInit {
-  public hellow: string;
+  public title: string;
   constructor() {}
 
   ngOnInit() {
-    this.hellow = 'hellow world';
+    this.title = 'Login';
   }
 }
