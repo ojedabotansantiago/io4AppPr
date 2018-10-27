@@ -10,12 +10,12 @@ import { ContactPage } from '../../pages/contact/contact.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: 'app',
     component: TabsPage,
     children: [
       {
         path: '',
-        redirectTo: '/tabs/(login:login)',
+        redirectTo: '/app/(login:login)',
         pathMatch: 'full'
       },
       {
@@ -42,7 +42,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/(login:login)',
+    redirectTo: '/app/(login:login)',
     pathMatch: 'full'
   }
 ];
