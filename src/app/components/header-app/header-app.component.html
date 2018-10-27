@@ -1,9 +1,10 @@
 <ion-header>
+
+  <button ion-button menuToggle (click)="openMenu()" class="menuButton">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <!--  <ion-menu-button></ion-menu-button> -->
   <div class="header-container">
-    <button ion-button menuToggle (click)="openMenu()" class="menuButton">
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <!--  <ion-menu-button></ion-menu-button> -->
     <p>{{title}}</p>
   </div>
 </ion-header>

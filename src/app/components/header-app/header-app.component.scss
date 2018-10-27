@@ -2,15 +2,15 @@ ion-header {
   display: flex !important;
   background-color: white !important;
 
+  button {
+    background-color: white !important;
+    width: 5%;
+  }
 
   .header-container {
+    width: 100%;
     display: flex !important;
-    flex-flow: inherit;
-    flex-shrink: initial;
-
-    button {
-      background-color: white !important;
-    }
+    justify-content: center;
   }
 
 
