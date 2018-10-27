@@ -5,12 +5,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LoginPage } from './login.page';
 import { HeaderAppModule } from '../../components/header-app/header-app.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [
-    IonicModule,
+    IonicModule.forRoot(),
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([{ path: '', component: LoginPage }]),
     HeaderAppModule
   ],

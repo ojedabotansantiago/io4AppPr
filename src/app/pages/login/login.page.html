@@ -2,4 +2,21 @@
 
 <ion-content padding>
   <h1>{{title}}</h1>
+  <ion-item>
+    <form [formGroup]="loginForm" (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label>loginForm</ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>pwd</ion-label>
+        <ion-textarea formControlName="pwd"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>pwdSecure</ion-label>
+        <ion-textarea formControlName="pwdSecure"></ion-textarea>
+      </ion-item>
+      <button ion-button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+  </ion-item>
 </ion-content>
